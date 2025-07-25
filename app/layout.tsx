@@ -11,8 +11,8 @@ const nunito = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "Химчистка Белгород",
-  description: "Химчистка Белгород",
+  title: "forge EVENGREEN",
+  description: "forge EVENGREEN",
     generator: 'v0.dev'
 }
 
@@ -22,11 +22,11 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-      <html lang="ru" suppressHydrationWarning>
+      <html lang="ua" suppressHydrationWarning>
       <meta name="description"
-            content="Профессиональная химчистка мягкой мебели в Белгороде по доступным ценам. Выезд на дом, качественная химия, индивидуальный подход."/>
+            content="сети броні на сервері evengreen"/>
       <meta name="keywords"
-            content="химчистка мебели Белгород, химчистка диванов, химчистка мебели, химчистка мягкой мебели, Fazis Clean"/>
+            content="сети броні на сервері evengreen"/>
       <body className={`${nunito.variable} font-nunito`}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false}>
           {children}

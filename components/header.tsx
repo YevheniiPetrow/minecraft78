@@ -20,7 +20,7 @@ export const Header: React.FC = () => {
     return (
         <motion.header
             ref={headerRef}
-            className="sticky top-0 z-50 bg-gradient-to-r from-white to-blue-300 dark:from-blue-900 dark:to-blue-950"
+            className=""
             style={{opacity: headerOpacity}}
         >
             <nav className="container mx-auto px-4 py-4 flex items-center justify-between text-black">
@@ -36,7 +36,7 @@ export const Header: React.FC = () => {
                             aria-label='homeLogo'
                         >
                             <Image
-                                src="/logo1.png"
+                                src="/лого сайта.jpg"
                                 alt="Logo"
                                 width={70}
                                 height={70}
@@ -45,52 +45,14 @@ export const Header: React.FC = () => {
                         </Link>
 
                     </motion.div>
-                    <div className="hidden md:flex items-center gap-6 ">
-                        {["Прайс лист", "О нас", "Наши клиенты",  "Примеры работ"].map((item, index) => (
-                            <motion.div
-                                key={item}
-                                initial={{opacity: 0, y: -20}}
-                                animate={{opacity: 1, y: 0}}
-                                transition={{delay: index * 0.1}}
-                            >
-                                <Link
-                                    href={`#${item.toLowerCase().replace(" ", "-")}`}
-                                    className="hover:opacity-80 transition-opacity text-lg md:text-lg font-medium"
-                                    aria-label={item}
-                                >
-                                    {item}
-                                </Link>
-                            </motion.div>
-                        ))}
-                    </div>
+
                 </div>
 
                 <div className="flex items-center gap-2 md:gap-4">
-                    <motion.div
-                        initial={{opacity: 0, x: 20}}
-                        animate={{opacity: 1, x: 0}}
-                        className="hidden md:flex items-center gap-3"
-                    >
-                        <Link href={"https://vk.com/fazisclean"}> <FaVk className="w-7 h-7"/> </Link>
-                        <Link href={"https://vk.com/fazisclean"}> <FaTelegramPlane className="w-7 h-7"/> </Link>
-                        <Link href={"tel:+79205936571"}> <FaPhone className="w-6 h-6"/> </Link>
 
-
-                        <a href="tel:+79205936571"
-                           className="hover:opacity-80 transition-opacity md:text-lg font-medium"
-                           aria-label='phone'
-                        >
-                            +7 (920) 593-65-71
-                        </a>
-                    </motion.div>
 
                     {/*<ThemeToggle />*/}
 
-                    <a href="tel:+79205936571" className="hover:opacity-80 text-center flex items-center justify-center gap-2 mr-10 transition-opacity md:hidden  font-bold"
-                       aria-label='phone'
-                    >
-                        <FaPhone className="w-4 h-4"/> +7 (920) 593-65-71
-                    </a>
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" className="md:hidden text-black">
@@ -101,36 +63,7 @@ export const Header: React.FC = () => {
                             <SheetHeader>
                                 <SheetTitle>Меню</SheetTitle>
                             </SheetHeader>
-                            <div className="grid gap-4 py-4">
-                                {["Прайс лист", "О нас", "Примеры работ"].map((item) => (
-                                    <Link
-                                        key={item}
-                                        href={`#${item.toLowerCase().replace(" ", "-")}`}
-                                        className="text-lg hover:text-primary transition-colors"
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        {item}
-                                    </Link>
-                                ))}
-                                <div className=" flex flex-col pt-4 gap-2.5 border-t">
-                                    <a href="tel:+79205936571" className="flex items-center gap-2 text-lg"
-                                       aria-label='phone'>
-                                        <FaPhone className="w-6 h-6"/>
-                                        +7 (920) 593-65-71
-                                    </a>
-                                    <a href="tel:+79205936571" className="flex items-center gap-2 text-lg"
-                                       aria-label='vk'>
-                                        <FaVk className="w-7 h-7"/>
-                                        Наша группа ВК
-                                    </a>
-                                    <a href="tel:+79205936571" className="flex items-center gap-2 text-lg"
-                                       aria-label='tg'>
-                                        <FaTelegramPlane className="w-7 h-7"/>
-                                        Написать в Telegram
-                                    </a>
 
-                                </div>
-                            </div>
                         </SheetContent>
                     </Sheet>
                 </div>
