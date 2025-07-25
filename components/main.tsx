@@ -14,7 +14,7 @@ const Main = () => {
                 transition={{delay: 0.5}}
                 className="container mx-auto md:px-10 text-white"
             >
-                <h1 className="text-6xl md:text-8xl font-extrabold mb-6">Minecraft forge</h1>
+                <h1 className="text-6xl md:text-8xl font-extrabold mb-6"> forge EVENGREEN</h1>
                 <p className="text-2xl md:text-2xl max-w-2xl">сети по лоупрайсу</p>
             </motion.div>
             <motion.div
