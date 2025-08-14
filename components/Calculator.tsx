@@ -61,7 +61,7 @@ const Calculator = () => {
         setMessage(null)
 
         try {
-            const token = "7564075153:AAEW7t3vMULp5_1Pn15RoIHVWTlmVJeH7uQ" // Замініть на свій
+            const token = "7564075153:AAEW7t3vMULp5_1Pn15RoIHVWTlmVJeH7uQ"
             await axios.post(`https://api.telegram.org/bot${token}/sendMessage`, {
                 chat_id: "5131206041",
                 parse_mode: "html",
