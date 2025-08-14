@@ -143,7 +143,7 @@ const Calculator = () => {
                     {/* Calculator Form */}
                     <div className="md:pl-[-300px]">
                         <div className="lg:1 lg:top 1 h-fit">
-                            <Card className="bg-[url('/wood.png')] bg-[length:200px_200px] text-white  border-black">
+                            <Card className="bg-[url('/wood.png')] bg-[length:200px_200px]   border-black">
                                 <CardContent className="p-1 md:p-1">
                                     <p className="text-3xl md:text-4xl font-bold text-center text-gray-200 mb-6 md:mb-8">
                                         {totalPrice} ар.
