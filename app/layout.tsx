@@ -10,10 +10,13 @@ const nunito = Roboto({
   variable: "--font-nunito"
 })
 
-export const metadata: Metadata = {
-  title: "forge EVENGREEN",
-  description: "forge EVENGREEN",
-    generator: 'v0.dev'
+export const metadata = {
+    title: "forge EVENGREEN",
+    description: "forge EVENGREEN",
+    generator: "v0.dev",
+    icons: {
+        icon: "/лого сайта.jpg",
+    },
 }
 
 export default function RootLayout({
