@@ -8,7 +8,7 @@ import {FaTelegramPlane, FaVk} from "react-icons/fa";
 import {FaPhone} from "react-icons/fa6";
 import {Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger} from "@/components/ui/sheet";
 import {Button} from "@/components/ui/button";
-
+import { FaDiscord } from "react-icons/fa"; // <-- імпорт іконки Discord
 
 
 export const Header: React.FC = () => {
@@ -23,7 +23,10 @@ export const Header: React.FC = () => {
             className=""
             style={{opacity: headerOpacity}}
         >
-            <nav className="container mx-auto px-4 py-4 flex items-center justify-between text-black">
+            <nav className="container mx-auto px-4 py-4 flex items-center justify-between text-black
+                rounded-b-2xl bg-gradient-to-r
+                from-[rgba(20,20,20,0.7)] to-[rgba(30,30,30,0.7)] ">
+
                 <div className="flex items-center gap-4 md:gap-8">
                     <motion.div
                         initial={{opacity: 0, scale: 0.8}}
@@ -43,15 +46,20 @@ export const Header: React.FC = () => {
                                 className="w-14 h-14 md:w-12 md:h-12"
                             />
                         </Link>
-
                     </motion.div>
-
                 </div>
 
                 <div className="flex items-center gap-2 md:gap-4">
 
-
-                    {/*<ThemeToggle />*/}
+                    {/* Discord кнопка */}
+                    <Button
+                        variant="default"
+                        className="  flex items-center gap-2"
+                        onClick={() => window.open("https://discord.com/channels/@me/1205112471971700786", "_blank")}
+                    >
+                        <FaDiscord className="w-5 h-5" />
+                        по всім питанням
+                    </Button>
 
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
@@ -63,7 +71,6 @@ export const Header: React.FC = () => {
                             <SheetHeader>
                                 <SheetTitle>Меню</SheetTitle>
                             </SheetHeader>
-
                         </SheetContent>
                     </Sheet>
                 </div>

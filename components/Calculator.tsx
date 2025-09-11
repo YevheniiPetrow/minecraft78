@@ -17,6 +17,7 @@ interface Service {
 
 const services: Service[] = [
     { id: "window1", title: "алмазник-початківець", icon: "", pricePerUnit: 1500 },
+
 ]
 
 const Calculator = () => {
@@ -92,7 +93,7 @@ const Calculator = () => {
 
     return (
         <section className="" id="прайс-лист">
-            <div className="container mx-auto">
+            <div className="container mx-auto ">
                 <motion.div
                     initial={{ opacity: 1, y: 1 }}
                     whileInView={{ opacity: 20, y: 10 }}
@@ -100,7 +101,7 @@ const Calculator = () => {
                     className="grid lg:grid-cols-3 gap-4 justify-center"
                 >
                     {/* Services Grid */}
-                    <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                    <div className="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 my-2 ">
                         {services.map((service) => (
                             <Card key={service.id} className="bg-[url('/wood.png')] bg-[length:200px_200px] text-white border-black">
                                 <CardContent className="p-3 md:p-4">
@@ -149,7 +150,7 @@ const Calculator = () => {
                                         {totalPrice} ар.
                                     </p>
                                     <form onSubmit={handleSubmit} className="space-y-5">
-                                        після того як замовили через +- 10 хвилин менеджер напише вам у діскорд  де можна забрати сет
+
                                         <div>
                                             <label className="block text-sm font-medium mb-1 text-gray-200" htmlFor="name">Ваш нік:</label>
                                             <Input

@@ -47,9 +47,9 @@ const About = () => {
             className="container mx-auto px-4 py-16"
         >
             <motion.div variants={fadeIn} className='flex justify-center items-center flex-col'>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">ПОЧЕМУ ИМЕННО МЫ?</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4"></h2>
                 <p className="px-6 text-sm md:text-base text-muted-foreground mb-12 max-w-2xl mx-auto">
-                    Мы используем только профессиональную химию и качественное оборудование
+
                 </p>
             </motion.div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">

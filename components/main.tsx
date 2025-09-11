@@ -15,7 +15,7 @@ const Main = () => {
                 className="container mx-auto md:px-10 text-white"
             >
                 <h1 className="text-6xl md:text-8xl font-extrabold mb-6"> forge EVENGREEN</h1>
-                <p className="text-2xl md:text-2xl max-w-2xl">сети по лоупрайсу</p>
+                <p className="text-2xl md:text-2xl max-w-2xl">Сети по лоупрайсу</p>
             </motion.div>
             <motion.div
                 initial={{opacity: 0, y: 20}}
@@ -27,7 +27,9 @@ const Main = () => {
 
             </motion.div>
         </section>
-    );
+
+
+);
 };
 
 export default Main;

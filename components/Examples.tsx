@@ -88,9 +88,9 @@ const examples = [
             className="container mx-auto px-4 py-16"
         >
             <motion.div variants={fadeIn} className="text-center mb-12">
-                <h2 className="text-3xl font-bold mb-4">ПРИМЕРЫ РАБОТ</h2>
+                <h2 className="text-3xl font-bold mb-4"></h2>
                 <p className="text-muted-foreground max-w-2xl mx-auto">
-                    Наши специалисты выполняют работу качественно и в срок. Посмотрите результаты до и после.
+
                 </p>
             </motion.div>
 

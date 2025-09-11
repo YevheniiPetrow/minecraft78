@@ -18,28 +18,9 @@ const fadeIn = {
 }
 const clients = [
     {
-        name: "Альфа-банк",
-        logo: "/1.png",
-    },
-    {
-        name: "МегаГринн",
-        logo: "/5.png",
-    },
-    {
-        name: "Лес&Лис",
-        logo: "/3.png",
-    },
-    {
-        name: "Газпромбанк",
-        logo: "/4.png",
-    },
-    {
-        name: "Ресторан Камчатка",
-        logo: "/kamchatka.png",
-    },{
-        name: "Атлетик.про",
-        logo: "/athletic.png",
-    },
+        name: "",
+        logo: "/",
+    }
 ]
 
 
@@ -74,7 +55,7 @@ const clients = [
             className="container mx-auto px-4 py-16 text-center"
         >
             <motion.div variants={fadeIn}>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4">НАШИ КЛИЕНТЫ</h2>
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">Н</h2>
                 <p className="text-sm md:text-base text-muted-foreground mb-12 max-w-2xl mx-auto">
                     Все больше компаний выбирает наши услуги и нас в качестве постоянных партнёров
                 </p>

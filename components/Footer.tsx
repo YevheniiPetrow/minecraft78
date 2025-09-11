@@ -18,31 +18,27 @@ const fadeIn = {
 }
  const Footer: React.FC = () => {
     return (
-        <footer className="bg-gradient-to-r from-gray-750 to-gray-760dark:from-gray-800">
-
+        <footer className=" rounded-t-2xl bg-gradient-to-r
+                 text-white border-black">
             <motion.div
                 initial="initial"
                 whileInView="animate"
-                viewport={{once: true}}
+                viewport={{ once: true }}
                 variants={staggerContainer}
-                className="container mx-auto px-5 py-4"
+                className="container px-5 py-5"
             >
-                <div className="grid md:grid-cols-4 gap-8">
-
-                    {/*<motion.div variants={fadeIn} className="md:col-span-2">*/}
-                    {/*  <h3 className="font-semibold mb-4">УСЛУГИ</h3>*/}
-                    {/*  <div className="grid md:grid-cols-2 gap-2">*/}
-                    {/*    {services.map((service) => (*/}
-                    {/*      <Link key={service.title} href="#" className="hover:opacity-80 transition-opacity">*/}
-                    {/*        {service.title}*/}
-                    {/*      </Link>*/}
-                    {/*    ))}*/}
-                    {/*  </div>*/}
-                    {/*</motion.div>*/}
+                <div className="grid md:grid-cols-5 gap-8 my-2">
+                    {/* Текст, який займає всю ширину */}
+                    <motion.div
+                        variants={fadeIn}
+                        className="md:col-span-5 w-full text-center text-white font-medium"
+                    >
+                        Після того як замовили, через ~10 хвилин менеджер напише вам у Discord, де можна забрати сет
+                    </motion.div>
                 </div>
             </motion.div>
-
         </footer>
+
     );
 }
 export default Footer
