@@ -49,31 +49,6 @@ export const Header: React.FC = () => {
                     </motion.div>
                 </div>
 
-                <div className="flex items-center gap-2 md:gap-4">
-
-                    {/* Discord кнопка */}
-                    <Button
-                        variant="default"
-                        className="  flex items-center gap-2"
-                        onClick={() => window.open("https://discord.com/channels/@me/1205112471971700786", "_blank")}
-                    >
-                        <FaDiscord className="w-5 h-5" />
-                        по всім питанням
-                    </Button>
-
-                    <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                        <SheetTrigger asChild>
-                            <Button variant="ghost" className="md:hidden text-black">
-                                <Menu className="h-30 w-50"/>
-                            </Button>
-                        </SheetTrigger>
-                        <SheetContent side="left" className="w-[300px]">
-                            <SheetHeader>
-                                <SheetTitle>Меню</SheetTitle>
-                            </SheetHeader>
-                        </SheetContent>
-                    </Sheet>
-                </div>
             </nav>
         </motion.header>
     );
