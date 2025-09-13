@@ -33,7 +33,7 @@ const fadeIn = {
                         variants={fadeIn}
                         className="md:col-span-5 w-full text-center text-white font-medium"
                     >
-                        Після того як замовили, через ~10 хвилин менеджер напише вам у Discord, де можна забрати сет
+                        Після того як замовили через ~10 хвилин менеджер напише вам у Discord де можна забрати сет
                     </motion.div>
                 </div>
             </motion.div>
