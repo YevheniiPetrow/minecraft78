@@ -16,7 +16,7 @@ interface Service {
 }
 
 const services: Service[] = [
-    { id: "window1", title: "незер,сет", icon: "netherite_set.png", pricePerUnit: 1500 },
+    { id: "window1", title: "незер/сет", icon: "netherite_set.png", pricePerUnit: 1500 },
 
 ]
 
