@@ -46,9 +46,15 @@ export const Header: React.FC = () => {
                                 height={70}
                                 className="w-14 h-14 md:w-12 md:h-12"
                             />
-                            <span className="text-white text-sm md:text-base font-medium leading-snug whitespace-nowrap">
-                                                         Після того як замовили через ~10 хвилин менеджер напише вам у Discord, де можна забрати сет
-  </span>
+                            <span
+                                className="
+    text-white text-sm md:text-base font-medium leading-snug
+    line-clamp-2 break-words
+  "
+                            >
+  Після того як замовили через ~10 хвилин менеджер напише вам у Discord, де можна забрати сет
+</span>
+
                         </Link>
                     </motion.div>
                 </div>
